@@ -2,9 +2,7 @@
 // كل مرة تضيف مقال جديد، زيد سطر واحد هنا فقط
 
 const articles = [
-  { title: "How to Budget Your Money: The Simple 50/30/20 Rule", category: "Financial Literacy", url: "/how-to-budget-money.html", excerpt: "The only budgeting system you'll ever need.", date: "June 16, 2026", readTime: "7 min", icon: "💵" },
-{ title: "How to Optimize Your LinkedIn Profile to Get Noticed in 2026", category: "Career Growth", url: "/linkedin-profile-tips.html", excerpt: "What recruiters actually look at — and the changes that make them click your profile.", date: "June 16, 2026", readTime: "8 min", icon: "💼" },
-  {
+    {
     title: "How to Build Good Habits That Actually Stick",
     category: "Mindset",
     url: "/how-to-build-good-habits.html",
@@ -67,6 +65,8 @@ const articles = [
     readTime: "9 min",
     icon: "💰"
   },
+  { title: "How to Budget Your Money: The Simple 50/30/20 Rule", category: "Financial Literacy", url: "/how-to-budget-money.html", excerpt: "The only budgeting system you'll ever need.", date: "June 16, 2026", readTime: "7 min", icon: "💵" },
+  { title: "How to Optimize Your LinkedIn Profile to Get Noticed in 2026", category: "Career Growth", url: "/linkedin-profile-tips.html", excerpt: "What recruiters actually look at.", date: "June 16, 2026", readTime: "8 min", icon: "💼" },
 ];
 
 // Auto-count categories
