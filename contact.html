@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | PopulusElectus</title>
+  <meta name="description" content="Get in touch with the PopulusElectus team. We'd love to hear from you — whether it's feedback, collaboration, or just saying hello." />
+  <link rel="canonical" href="https://populuselectus.com/contact" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root{--ink:#0f0f0f;--paper:#f7f5f0;--accent:#2b5f3e;--gold:#c9a84c;--muted:#6b6b6b;--border:#e2dfd8;--card:#ffffff;--serif:'Playfair Display',Georgia,serif;--body:'Inter',system-ui,sans-serif;--max:800px}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.7}
+    a{color:var(--accent);text-decoration:none}
+    nav{background:var(--paper);border-bottom:1px solid var(--border);padding:0 24px;position:sticky;top:0;z-index:100}
+    .nav-inner{max-width:1100px;margin:auto;display:flex;align-items:center;justify-content:space-between;height:60px}
+    .logo{font-family:var(--serif);font-size:1.2rem;font-weight:900;color:var(--accent)} .logo span{color:var(--gold)}
+    .nav-back{font-size:0.85rem;color:var(--muted)} .nav-back:hover{color:var(--accent)}
+
+    /* HERO */
+    .hero{background:linear-gradient(135deg,#2b5f3e,#0a1f13);padding:64px 24px;text-align:center}
+    .hero-label{font-size:0.75rem;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);margin-bottom:16px;display:block}
+    .hero h1{font-family:var(--serif);font-size:clamp(2rem,5vw,3rem);font-weight:900;color:#fff;margin-bottom:12px}
+    .hero p{color:rgba(255,255,255,0.65);font-size:1rem;max-width:480px;margin:0 auto}
+
+    /* MAIN */
+    .main{max-width:var(--max);margin:0 auto;padding:56px 24px 80px;display:grid;grid-template-columns:1fr 1.4fr;gap:48px;align-items:start}
+
+    /* INFO SIDE */
+    .info-side{}
+    .info-title{font-family:var(--serif);font-size:1.4rem;font-weight:900;color:var(--ink);margin-bottom:8px}
+    .info-sub{color:var(--muted);font-size:0.9rem;margin-bottom:32px;line-height:1.6}
+    .contact-item{display:flex;gap:14px;align-items:flex-start;margin-bottom:24px}
+    .contact-icon{width:40px;height:40px;background:rgba(43,95,62,0.1);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0}
+    .contact-label{font-size:0.75rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--gold);margin-bottom:2px}
+    .contact-value{font-size:0.9rem;color:var(--ink);font-weight:500}
+    .contact-value a{color:var(--accent)}
+
+    /* SOCIAL */
+    .social-title{font-size:0.75rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin:32px 0 14px}
+    .social-links{display:flex;gap:10px;flex-wrap:wrap}
+    .social-btn{display:flex;align-items:center;gap:8px;background:var(--card);border:1px solid var(--border);border-radius:6px;padding:10px 16px;font-size:0.85rem;font-weight:600;color:var(--ink);transition:border-color 0.2s,color 0.2s}
+    .social-btn:hover{border-color:var(--accent);color:var(--accent)}
+
+    /* FORM SIDE */
+    .form-card{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:32px}
+    .form-title{font-family:var(--serif);font-size:1.2rem;font-weight:700;color:var(--ink);margin-bottom:24px}
+    .form-group{margin-bottom:18px}
+    .form-label{display:block;font-size:0.8rem;font-weight:600;color:var(--ink);margin-bottom:6px;letter-spacing:0.03em}
+    .form-input{width:100%;background:var(--paper);border:1.5px solid var(--border);border-radius:4px;padding:12px 14px;font-size:0.92rem;font-family:var(--body);color:var(--ink);outline:none;transition:border-color 0.2s}
+    .form-input:focus{border-color:var(--accent)}
+    .form-input::placeholder{color:#b0ada6}
+    textarea.form-input{resize:vertical;min-height:130px}
+    select.form-input{cursor:pointer}
+    .form-btn{width:100%;background:var(--accent);color:#fff;border:none;border-radius:4px;padding:14px;font-size:0.95rem;font-weight:700;font-family:var(--body);cursor:pointer;transition:opacity 0.2s;margin-top:4px}
+    .form-btn:hover{opacity:0.85}
+    .form-note{font-size:0.75rem;color:var(--muted);text-align:center;margin-top:12px}
+
+    /* SUCCESS */
+    .success-msg{display:none;background:rgba(43,95,62,0.08);border:1px solid rgba(43,95,62,0.2);border-radius:6px;padding:20px;text-align:center;margin-top:16px}
+    .success-msg .check{font-size:2rem;margin-bottom:8px;display:block}
+    .success-msg p{font-size:0.9rem;color:var(--accent);font-weight:600}
+
+    /* FAQ */
+    .faq-section{max-width:var(--max);margin:0 auto;padding:0 24px 80px}
+    .faq-title{font-family:var(--serif);font-size:1.5rem;font-weight:900;color:var(--ink);margin-bottom:24px}
+    .faq-item{background:var(--card);border:1px solid var(--border);border-radius:6px;padding:20px 24px;margin-bottom:12px}
+    .faq-q{font-weight:600;font-size:0.95rem;color:var(--ink);margin-bottom:8px}
+    .faq-a{font-size:0.88rem;color:var(--muted);line-height:1.6}
+
+    footer{border-top:1px solid var(--border);padding:32px 24px;text-align:center;font-size:0.82rem;color:var(--muted)}
+
+    @media(max-width:700px){.main{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="/" class="logo">Populus<span>Electus</span></a>
+    <a href="/" class="nav-back">← Back to Home</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <span class="hero-label">Get In Touch</span>
+  <h1>We'd Love to Hear From You</h1>
+  <p>Questions, feedback, collaboration ideas, or just want to say hello — we're all ears.</p>
+</div>
+
+<!-- MAIN -->
+<div class="main">
+
+  <!-- INFO -->
+  <div class="info-side">
+    <h2 class="info-title">Contact Information</h2>
+    <p class="info-sub">Reach out anytime — we typically respond within 24-48 hours.</p>
+
+    <div class="contact-item">
+      <div class="contact-icon">📧</div>
+      <div>
+        <div class="contact-label">Email</div>
+        <div class="contact-value"><a href="mailto:hello@populuselectus.com">hello@populuselectus.com</a></div>
+      </div>
+    </div>
+
+    <div class="contact-item">
+      <div class="contact-icon">✍️</div>
+      <div>
+        <div class="contact-label">Write For Us</div>
+        <div class="contact-value">Interested in contributing? We welcome guest writers.</div>
+      </div>
+    </div>
+
+    <div class="contact-item">
+      <div class="contact-icon">🤝</div>
+      <div>
+        <div class="contact-label">Partnerships</div>
+        <div class="contact-value">Brand collaborations & sponsorships welcome.</div>
+      </div>
+    </div>
+
+    <p class="social-title">Follow Us</p>
+    <div class="social-links">
+      <a href="#" class="social-btn">𝕏 Twitter</a>
+      <a href="#" class="social-btn">in LinkedIn</a>
+      <a href="#" class="social-btn">📘 Facebook</a>
+    </div>
+  </div>
+
+  <!-- FORM -->
+  <div class="form-card">
+    <h3 class="form-title">Send Us a Message</h3>
+
+    <div class="form-group">
+      <label class="form-label">Your Name</label>
+      <input class="form-input" type="text" placeholder="John Doe" id="name" />
+    </div>
+
+    <div class="form-group">
+      <label class="form-label">Email Address</label>
+      <input class="form-input" type="email" placeholder="you@email.com" id="email" />
+    </div>
+
+    <div class="form-group">
+      <label class="form-label">Subject</label>
+      <select class="form-input" id="subject">
+        <option value="">Select a topic...</option>
+        <option>General Question</option>
+        <option>Write For Us</option>
+        <option>Partnership / Sponsorship</option>
+        <option>Feedback</option>
+        <option>Other</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label class="form-label">Message</label>
+      <textarea class="form-input" placeholder="Tell us what's on your mind..." id="message"></textarea>
+    </div>
+
+    <button class="form-btn" onclick="handleSubmit()">Send Message →</button>
+    <p class="form-note">We respond within 24-48 hours.</p>
+
+    <div class="success-msg" id="successMsg">
+      <span class="check">✅</span>
+      <p>Message sent! We'll get back to you within 24-48 hours.</p>
+    </div>
+  </div>
+
+</div>
+
+<!-- FAQ -->
+<div class="faq-section">
+  <h2 class="faq-title">Frequently Asked Questions</h2>
+
+  <div class="faq-item">
+    <div class="faq-q">Can I write an article for PopulusElectus?</div>
+    <div class="faq-a">Yes! We welcome guest contributors. Send us your topic idea and a brief outline via the contact form above.</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q">How often do you publish new articles?</div>
+    <div class="faq-a">We publish new content weekly — covering mindset, productivity, career, and financial literacy.</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q">Do you accept sponsored content?</div>
+    <div class="faq-a">We're open to brand partnerships that align with our values of growth and self-improvement. Reach out via the form above.</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q">How do I subscribe to the newsletter?</div>
+    <div class="faq-a">Scroll to the bottom of our <a href="/">homepage</a> and enter your email in the "Join the Electus Circle" section.</div>
+  </div>
+</div>
+
+<footer>
+  <p>© 2026 <a href="/">PopulusElectus.com</a> — Chosen to Grow</p>
+</footer>
+
+<script>
+  function handleSubmit() {
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+    if (!name || !email || !message) {
+      alert('Please fill in all required fields.');
+      return;
+    }
+    document.getElementById('successMsg').style.display = 'block';
+    document.getElementById('name').value = '';
+    document.getElementById('email').value = '';
+    document.getElementById('subject').value = '';
+    document.getElementById('message').value = '';
+  }
+</script>
+
+</body>
+</html>
