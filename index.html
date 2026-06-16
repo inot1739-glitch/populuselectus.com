@@ -601,12 +601,12 @@
     <a href="/career.html" class="cat-card">
       <span class="cat-icon">💼</span>
       <div class="cat-name">Career Growth</div>
-      <div class="cat-count">24 articles</div>
+      <div class="cat-count">Coming Soon</div>
     </a>
     <a href="/finance.html" class="cat-card">
       <span class="cat-icon">💰</span>
       <div class="cat-name">Financial Literacy</div>
-      <div class="cat-count">18 articles</div>
+      <div class="cat-count">Coming Soon</div>
     </a>
   </div>
 </section>
@@ -687,6 +687,7 @@
   tags.forEach(tag => {
     const t = tag.textContent.trim();
     counts[t] = (counts[t] || 0) + 1;
+    const normalized = t.charAt(0).toUpperCase() + t.slice(1).toLowerCase();
   });
   document.querySelectorAll('.cat-card').forEach(card => {
     const name = card.querySelector('.cat-name')?.textContent.trim();
