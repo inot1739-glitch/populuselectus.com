@@ -682,15 +682,17 @@
 </footer>
 
 <script>
-  const counts = { Mindset: 0, Productivity: 0 };
-  document.querySelectorAll('.post-tag').forEach(tag => {
+  const tags = document.querySelectorAll('.post-tag');
+  const counts = {};
+  tags.forEach(tag => {
     const t = tag.textContent.trim();
-    if (counts[t] !== undefined) counts[t]++;
+    counts[t] = (counts[t] || 0) + 1;
   });
-  document.querySelectorAll('.cat-count').forEach(el => {
-    const name = el.previousElementSibling.textContent.trim();
-    if (counts[name] !== undefined) {
-      el.textContent = counts[name] + ' articles';
+  document.querySelectorAll('.cat-card').forEach(card => {
+    const name = card.querySelector('.cat-name')?.textContent.trim();
+    const countEl = card.querySelector('.cat-count');
+    if (name && countEl && counts[name]) {
+      countEl.textContent = counts[name] + ' articles';
     }
   });
 </script>
