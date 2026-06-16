@@ -113,4 +113,9 @@ function fillLatestSection() {
 document.addEventListener('DOMContentLoaded', () => {
   updateCategoryCounts();
   fillLatestSection();
+  
+  // Update article count
+  const totalEl = document.querySelector('.stat-num');
+  if (totalEl) totalEl.textContent = articles.length + '+';
 });
+
