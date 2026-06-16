@@ -682,18 +682,23 @@
 </footer>
 
 <script>
+  // Count visible post tags
   const tags = document.querySelectorAll('.post-tag');
   const counts = {};
   tags.forEach(tag => {
     const t = tag.textContent.trim();
     counts[t] = (counts[t] || 0) + 1;
-    const normalized = t.charAt(0).toUpperCase() + t.slice(1).toLowerCase();
   });
+
+  // Manual counts for categories not shown on homepage
+  counts['Career Growth'] = 1;
+  counts['Financial Literacy'] = 1;
+
   document.querySelectorAll('.cat-card').forEach(card => {
     const name = card.querySelector('.cat-name')?.textContent.trim();
     const countEl = card.querySelector('.cat-count');
     if (name && countEl && counts[name]) {
-      countEl.textContent = counts[name] + ' articles';
+      countEl.textContent = counts[name] + ' article' + (counts[name] > 1 ? 's' : '');
     }
   });
 </script>
