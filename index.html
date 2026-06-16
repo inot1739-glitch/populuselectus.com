@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Populuselectus — Chosen to Grow</title>
+  <meta name="description" content="Practical insights on productivity, mindset, and self-mastery for people who chose to level up." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500;600&family=Libre+Baskerville:ital@1&display=swap" rel="stylesheet" />
+  <style>
+    /* ── TOKENS ── */
+    :root {
+      --ink:      #0f0f0f;
+      --paper:    #f7f5f0;
+      --accent:   #2b5f3e;   /* deep forest green — growth, chosen, elite */
+      --gold:     #c9a84c;   /* subtle prestige */
+      --muted:    #6b6b6b;
+      --card-bg:  #ffffff;
+      --border:   #e2dfd8;
+      --radius:   4px;
+      --max:      1100px;
+      --serif:    'Playfair Display', Georgia, serif;
+      --body:     'Inter', system-ui, sans-serif;
+      --italic:   'Libre Baskerville', Georgia, serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--body);
+      font-size: 16px;
+      line-height: 1.65;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    /* ── NAV ── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--paper);
+      border-bottom: 1px solid var(--border);
+      padding: 0 24px;
+    }
+    .nav-inner {
+      max-width: var(--max);
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 60px;
+    }
+    .logo {
+      font-family: var(--serif);
+      font-size: 1.2rem;
+      font-weight: 900;
+      letter-spacing: -0.02em;
+      color: var(--accent);
+    }
+    .logo span { color: var(--gold); }
+    .nav-links {
+      display: flex;
+      gap: 28px;
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: var(--muted);
+      list-style: none;
+    }
+    .nav-links a:hover { color: var(--accent); }
+    .nav-cta {
+      background: var(--accent);
+      color: #fff;
+      padding: 8px 20px;
+      border-radius: var(--radius);
+      font-size: 0.85rem;
+      font-weight: 600;
+      transition: opacity 0.2s;
+    }
+    .nav-cta:hover { opacity: 0.85; }
+
+    /* ── HERO ── */
+    .hero {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 80px 24px 60px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+    .hero-eyebrow {
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 16px;
+    }
+    .hero h1 {
+      font-family: var(--serif);
+      font-size: clamp(2.4rem, 5vw, 3.6rem);
+      font-weight: 900;
+      line-height: 1.1;
+      letter-spacing: -0.03em;
+      color: var(--ink);
+      margin-bottom: 20px;
+    }
+    .hero h1 em {
+      font-style: italic;
+      color: var(--accent);
+      font-family: var(--italic);
+    }
+    .hero-sub {
+      font-size: 1.05rem;
+      color: var(--muted);
+      max-width: 420px;
+      margin-bottom: 32px;
+    }
+    .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+    .btn-primary {
+      background: var(--accent);
+      color: #fff;
+      padding: 12px 28px;
+      border-radius: var(--radius);
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: opacity 0.2s;
+    }
+    .btn-primary:hover { opacity: 0.85; }
+    .btn-ghost {
+      border: 1.5px solid var(--border);
+      color: var(--muted);
+      padding: 12px 24px;
+      border-radius: var(--radius);
+      font-size: 0.95rem;
+      transition: border-color 0.2s, color 0.2s;
+    }
+    .btn-ghost:hover { border-color: var(--accent); color: var(--accent); }
+
+    /* HERO — signature element: rotating quote strip */
+    .hero-visual {
+      background: var(--ink);
+      border-radius: 8px;
+      padding: 40px 36px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-visual::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, var(--accent) 0%, #0f2a1b 100%);
+      opacity: 0.95;
+    }
+    .quote-wrap {
+      position: relative;
+      z-index: 1;
+    }
+    .quote-mark {
+      font-family: var(--serif);
+      font-size: 6rem;
+      color: var(--gold);
+      line-height: 0.6;
+      margin-bottom: 20px;
+      display: block;
+      opacity: 0.7;
+    }
+    .quote-text {
+      font-family: var(--italic);
+      font-size: 1.3rem;
+      color: #fff;
+      line-height: 1.5;
+      font-style: italic;
+      margin-bottom: 20px;
+    }
+    .quote-author {
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+    .stats-row {
+      display: flex;
+      gap: 32px;
+      margin-top: 32px;
+      padding-top: 24px;
+      border-top: 1px solid rgba(255,255,255,0.15);
+    }
+    .stat-item { color: #fff; }
+    .stat-num {
+      font-family: var(--serif);
+      font-size: 1.8rem;
+      font-weight: 900;
+      color: var(--gold);
+    }
+    .stat-label { font-size: 0.75rem; color: rgba(255,255,255,0.6); margin-top: 2px; }
+
+    /* ── DIVIDER ── */
+    .divider {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 0 24px;
+      border-top: 1px solid var(--border);
+    }
+
+    /* ── SECTION LABEL ── */
+    .section-label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 12px;
+    }
+    .section-title {
+      font-family: var(--serif);
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      font-weight: 900;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+      margin-bottom: 8px;
+    }
+    .section-sub { color: var(--muted); font-size: 0.95rem; }
+
+    /* ── FEATURED POST ── */
+    .featured-section {
+      max-width: var(--max);
+      margin: 64px auto 0;
+      padding: 0 24px;
+    }
+    .featured-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr;
+      gap: 32px;
+      margin-top: 32px;
+    }
+    .post-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      overflow: hidden;
+      transition: box-shadow 0.2s, transform 0.2s;
+      cursor: pointer;
+    }
+    .post-card:hover {
+      box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+      transform: translateY(-2px);
+    }
+    .post-thumb {
+      width: 100%;
+      aspect-ratio: 16/9;
+      object-fit: cover;
+      display: block;
+      background: linear-gradient(135deg, var(--accent), #1a3d27);
+      position: relative;
+      overflow: hidden;
+    }
+    .post-thumb-inner {
+      width: 100%;
+      aspect-ratio: 16/9;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, var(--accent) 0%, #163222 100%);
+      font-family: var(--serif);
+      font-size: 3.5rem;
+      color: rgba(255,255,255,0.15);
+      font-weight: 900;
+      letter-spacing: -0.04em;
+      user-select: none;
+    }
+    .post-body { padding: 24px; }
+    .post-tag {
+      display: inline-block;
+      background: rgba(43,95,62,0.1);
+      color: var(--accent);
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 3px 10px;
+      border-radius: 20px;
+      margin-bottom: 12px;
+    }
+    .post-title {
+      font-family: var(--serif);
+      font-size: 1.25rem;
+      font-weight: 700;
+      line-height: 1.3;
+      color: var(--ink);
+      margin-bottom: 10px;
+    }
+    .post-card.featured .post-title { font-size: 1.6rem; }
+    .post-excerpt { font-size: 0.9rem; color: var(--muted); margin-bottom: 16px; line-height: 1.6; }
+    .post-meta { font-size: 0.78rem; color: var(--muted); display: flex; gap: 12px; align-items: center; }
+    .post-meta span::before { content: '·'; margin-right: 12px; }
+    .post-meta span:first-child::before { content: none; }
+
+    /* Right column stacked */
+    .featured-stack { display: flex; flex-direction: column; gap: 20px; }
+    .post-card.mini { display: flex; }
+    .post-card.mini .post-thumb-inner {
+      width: 100px;
+      min-width: 100px;
+      aspect-ratio: 1;
+      font-size: 1.8rem;
+      border-radius: 0;
+    }
+    .post-card.mini .post-body { padding: 16px; }
+    .post-card.mini .post-title { font-size: 0.95rem; margin-bottom: 6px; }
+    .post-card.mini .post-excerpt { display: none; }
+
+    /* ── CATEGORIES BAND ── */
+    .categories-section {
+      max-width: var(--max);
+      margin: 64px auto 0;
+      padding: 0 24px;
+    }
+    .cat-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin-top: 32px;
+    }
+    .cat-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 28px 20px;
+      transition: background 0.2s, border-color 0.2s;
+      cursor: pointer;
+    }
+    .cat-card:hover { background: var(--accent); border-color: var(--accent); }
+    .cat-card:hover .cat-icon,
+    .cat-card:hover .cat-name,
+    .cat-card:hover .cat-count { color: #fff; }
+    .cat-icon { font-size: 1.8rem; margin-bottom: 12px; display: block; }
+    .cat-name {
+      font-family: var(--serif);
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 4px;
+    }
+    .cat-count { font-size: 0.8rem; color: var(--muted); }
+
+    /* ── LATEST ARTICLES ── */
+    .latest-section {
+      max-width: var(--max);
+      margin: 64px auto 0;
+      padding: 0 24px;
+    }
+    .latest-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 32px;
+    }
+
+    /* ── NEWSLETTER ── */
+    .newsletter-section {
+      max-width: var(--max);
+      margin: 80px auto 0;
+      padding: 0 24px;
+    }
+    .newsletter-box {
+      background: var(--ink);
+      border-radius: 8px;
+      padding: 60px 48px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .newsletter-box::before {
+      content: 'ELECTUS';
+      position: absolute;
+      right: -20px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-family: var(--serif);
+      font-size: 9rem;
+      font-weight: 900;
+      color: rgba(255,255,255,0.03);
+      letter-spacing: -0.05em;
+      pointer-events: none;
+      user-select: none;
+    }
+    .newsletter-box .section-label { color: var(--gold); }
+    .newsletter-box .section-title { color: #fff; }
+    .newsletter-box .section-sub { color: rgba(255,255,255,0.55); }
+    .nl-form { display: flex; flex-direction: column; gap: 12px; }
+    .nl-input {
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: var(--radius);
+      padding: 14px 18px;
+      color: #fff;
+      font-size: 0.95rem;
+      font-family: var(--body);
+      outline: none;
+      transition: border-color 0.2s;
+    }
+    .nl-input::placeholder { color: rgba(255,255,255,0.35); }
+    .nl-input:focus { border-color: var(--gold); }
+    .nl-btn {
+      background: var(--gold);
+      color: var(--ink);
+      border: none;
+      border-radius: var(--radius);
+      padding: 14px 24px;
+      font-weight: 700;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: opacity 0.2s;
+    }
+    .nl-btn:hover { opacity: 0.85; }
+    .nl-note { font-size: 0.75rem; color: rgba(255,255,255,0.3); }
+
+    /* ── FOOTER ── */
+    footer {
+      margin-top: 80px;
+      border-top: 1px solid var(--border);
+      padding: 40px 24px;
+    }
+    .footer-inner {
+      max-width: var(--max);
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    .footer-copy { font-size: 0.82rem; color: var(--muted); }
+    .footer-links { display: flex; gap: 20px; }
+    .footer-links a { font-size: 0.82rem; color: var(--muted); transition: color 0.2s; }
+    .footer-links a:hover { color: var(--accent); }
+
+    /* ── AD SLOT (AdSense ready) ── */
+    .ad-banner {
+      max-width: var(--max);
+      margin: 48px auto 0;
+      padding: 0 24px;
+    }
+    .ad-slot {
+      background: var(--card-bg);
+      border: 1px dashed var(--border);
+      border-radius: var(--radius);
+      height: 90px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.8rem;
+      color: var(--border);
+      letter-spacing: 0.05em;
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 900px) {
+      .hero { grid-template-columns: 1fr; }
+      .hero-visual { display: none; }
+      .featured-grid { grid-template-columns: 1fr; }
+      .cat-grid { grid-template-columns: repeat(2, 1fr); }
+      .latest-grid { grid-template-columns: repeat(2, 1fr); }
+      .newsletter-box { grid-template-columns: 1fr; padding: 40px 28px; }
+    }
+    @media (max-width: 560px) {
+      .nav-links { display: none; }
+      .cat-grid { grid-template-columns: repeat(2, 1fr); }
+      .latest-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ── NAV ── -->
+<nav>
+  <div class="nav-inner">
+    <a href="/" class="logo">Populus<span>Electus</span></a>
+    <ul class="nav-links">
+      <li><a href="#mindset">Mindset</a></li>
+      <li><a href="#productivity">Productivity</a></li>
+      <li><a href="#career">Career</a></li>
+      <li><a href="#finance">Finance</a></li>
+    </ul>
+    <a href="#newsletter" class="nav-cta">Get Weekly Picks</a>
+  </div>
+</nav>
+
+<!-- ── HERO ── -->
+<section class="hero">
+  <div class="hero-text">
+    <p class="hero-eyebrow">For the Few Who Choose to Rise</p>
+    <h1>Growth is a<br /><em>decision</em>,<br />not a destiny.</h1>
+    <p class="hero-sub">Practical, research-backed insights on mindset, productivity, and self-mastery — for people who chose to become the best version of themselves.</p>
+    <div class="hero-actions">
+      <a href="#featured" class="btn-primary">Start Reading</a>
+      <a href="#categories" class="btn-ghost">Explore Topics</a>
+    </div>
+  </div>
+  <div class="hero-visual" aria-hidden="true">
+    <div class="quote-wrap">
+      <span class="quote-mark">"</span>
+      <p class="quote-text">The secret of getting ahead is getting started — and choosing not to stop.</p>
+      <p class="quote-author">— Mark Twain</p>
+      <div class="stats-row">
+        <div class="stat-item">
+          <div class="stat-num">120+</div>
+          <div class="stat-label">Articles</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">12k</div>
+          <div class="stat-label">Readers/mo</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">4</div>
+          <div class="stat-label">Topics</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── AD SLOT (728x90 leaderboard) ── -->
+<div class="ad-banner">
+  <div class="ad-slot">[ Google AdSense — Leaderboard 728×90 ]</div>
+</div>
+
+<!-- ── FEATURED ── -->
+<section class="featured-section" id="featured">
+  <p class="section-label">Featured</p>
+  <h2 class="section-title">This Week's Best Reads</h2>
+  <div class="featured-grid">
+    <!-- Main featured -->
+    <a href="#" class="post-card featured">
+      <div class="post-thumb-inner">PE</div>
+      <div class="post-body">
+        <span class="post-tag">Mindset</span>
+        <h3 class="post-title">The 5 Mental Models That High Performers Use to Make Better Decisions</h3>
+        <p class="post-excerpt">Most people react. The chosen few respond. Here's the framework top CEOs, athletes, and creators quietly rely on — and how you can apply it today.</p>
+        <div class="post-meta">
+          <span>June 14, 2026</span>
+          <span>8 min read</span>
+        </div>
+      </div>
+    </a>
+    <!-- Stack -->
+    <div class="featured-stack">
+      <a href="#" class="post-card mini">
+        <div class="post-thumb-inner">⚡</div>
+        <div class="post-body">
+          <span class="post-tag">Productivity</span>
+          <h3 class="post-title">Why Your Morning Routine Is Failing You (And What to Do Instead)</h3>
+          <div class="post-meta"><span>June 12</span><span>5 min</span></div>
+        </div>
+      </a>
+      <a href="#" class="post-card mini">
+        <div class="post-thumb-inner">💼</div>
+        <div class="post-body">
+          <span class="post-tag">Career</span>
+          <h3 class="post-title">How to Ask for a Raise and Actually Get It</h3>
+          <div class="post-meta"><span>June 10</span><span>6 min</span></div>
+        </div>
+      </a>
+      <a href="#" class="post-card mini">
+        <div class="post-thumb-inner">💰</div>
+        <div class="post-body">
+          <span class="post-tag">Finance</span>
+          <h3 class="post-title">The Index Fund Strategy Every 20-Something Should Know</h3>
+          <div class="post-meta"><span>June 8</span><span>7 min</span></div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ── CATEGORIES ── -->
+<section class="categories-section" id="categories">
+  <p class="section-label">Topics</p>
+  <h2 class="section-title">Choose Your Growth Path</h2>
+  <div class="cat-grid">
+    <div class="cat-card">
+      <span class="cat-icon">🧠</span>
+      <div class="cat-name">Mindset</div>
+      <div class="cat-count">32 articles</div>
+    </div>
+    <div class="cat-card">
+      <span class="cat-icon">⚡</span>
+      <div class="cat-name">Productivity</div>
+      <div class="cat-count">28 articles</div>
+    </div>
+    <div class="cat-card">
+      <span class="cat-icon">💼</span>
+      <div class="cat-name">Career Growth</div>
+      <div class="cat-count">24 articles</div>
+    </div>
+    <div class="cat-card">
+      <span class="cat-icon">💰</span>
+      <div class="cat-name">Financial Literacy</div>
+      <div class="cat-count">18 articles</div>
+    </div>
+  </div>
+</section>
+
+<!-- ── LATEST ── -->
+<section class="latest-section">
+  <p class="section-label">Latest</p>
+  <h2 class="section-title">Fresh From the Blog</h2>
+  <div class="latest-grid">
+    <a href="#" class="post-card">
+      <div class="post-thumb-inner" style="font-size:2.5rem">🧠</div>
+      <div class="post-body">
+        <span class="post-tag">Mindset</span>
+        <h3 class="post-title">How to Stop Overthinking and Start Acting</h3>
+        <p class="post-excerpt">The science of decision fatigue and three daily resets that clear your mental RAM.</p>
+        <div class="post-meta"><span>June 16</span><span>6 min</span></div>
+      </div>
+    </a>
+    <a href="#" class="post-card">
+      <div class="post-thumb-inner" style="font-size:2.5rem">⚡</div>
+      <div class="post-body">
+        <span class="post-tag">Productivity</span>
+        <h3 class="post-title">Deep Work in a Distracted World: A Starter Guide</h3>
+        <p class="post-excerpt">Cal Newport's principles translated into a 30-day implementation plan anyone can follow.</p>
+        <div class="post-meta"><span>June 15</span><span>9 min</span></div>
+      </div>
+    </a>
+    <a href="#" class="post-card">
+      <div class="post-thumb-inner" style="font-size:2.5rem">💼</div>
+      <div class="post-body">
+        <span class="post-tag">Career</span>
+        <h3 class="post-title">The LinkedIn Profile That Gets You Noticed in 2026</h3>
+        <p class="post-excerpt">Data from 500 recruiters: what makes them stop scrolling and click your profile.</p>
+        <div class="post-meta"><span>June 13</span><span>7 min</span></div>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- ── AD SLOT (rectangle) ── -->
+<div class="ad-banner">
+  <div class="ad-slot">[ Google AdSense — Rectangle 336×280 ]</div>
+</div>
+
+<!-- ── NEWSLETTER ── -->
+<section class="newsletter-section" id="newsletter">
+  <div class="newsletter-box">
+    <div>
+      <p class="section-label">Weekly Newsletter</p>
+      <h2 class="section-title">Join the Electus Circle</h2>
+      <p class="section-sub" style="margin-top:10px">Every Sunday — one insight on mindset, one on productivity, one on money. Curated for people who don't have time to waste.</p>
+    </div>
+    <div class="nl-form">
+      <input class="nl-input" type="text" placeholder="Your first name" />
+      <input class="nl-input" type="email" placeholder="your@email.com" />
+      <button class="nl-btn">Subscribe — It's Free</button>
+      <p class="nl-note">No spam. Unsubscribe anytime. ~3 min read per issue.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="footer-inner">
+    <p class="footer-copy">© 2026 PopulusElectus.com — Chosen to Grow</p>
+    <div class="footer-links">
+      <a href="#">About</a>
+      <a href="#">Write for Us</a>
+      <a href="#">Privacy</a>
+      <a href="#">Contact</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
