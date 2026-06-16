@@ -681,5 +681,18 @@
   </div>
 </footer>
 
+<script>
+  const counts = { Mindset: 0, Productivity: 0 };
+  document.querySelectorAll('.post-tag').forEach(tag => {
+    const t = tag.textContent.trim();
+    if (counts[t] !== undefined) counts[t]++;
+  });
+  document.querySelectorAll('.cat-count').forEach(el => {
+    const name = el.previousElementSibling.textContent.trim();
+    if (counts[name] !== undefined) {
+      el.textContent = counts[name] + ' articles';
+    }
+  });
+</script>
 </body>
 </html>
