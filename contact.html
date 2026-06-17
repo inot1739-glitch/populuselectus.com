@@ -131,22 +131,22 @@
   </div>
 
   <!-- FORM -->
-  <div class="form-card">
+  <div class="form-card"><form action="https://formspree.io/f/xykaaygd" method="POST">
     <h3 class="form-title">Send Us a Message</h3>
 
     <div class="form-group">
       <label class="form-label">Your Name</label>
-      <input class="form-input" type="text" placeholder="John Doe" id="name" />
+      <input class="form-input" type="text" name="name" placeholder="John Doe" id="name" />
     </div>
 
     <div class="form-group">
       <label class="form-label">Email Address</label>
-      <input class="form-input" type="email" placeholder="you@email.com" id="email" />
+      <input class="form-input" type="email" name="email" placeholder="you@email.com" id="email" />
     </div>
 
     <div class="form-group">
       <label class="form-label">Subject</label>
-      <select class="form-input" id="subject">
+      <select class="form-input" name="subject" id="subject">
         <option value="">Select a topic...</option>
         <option>General Question</option>
         <option>Write For Us</option>
@@ -158,10 +158,11 @@
 
     <div class="form-group">
       <label class="form-label">Message</label>
-      <textarea class="form-input" placeholder="Tell us what's on your mind..." id="message"></textarea>
+      <textarea class="form-input" name="message" placeholder="Tell us what's on your mind..." id="message"></textarea>
     </div>
 
-    <button class="form-btn" onclick="handleSubmit()">Send Message →</button>
+    <button class="form-btn" type="submit">Send Message →</button>
+  </form>
     <p class="form-note">We respond within 24-48 hours.</p>
 
     <div class="success-msg" id="successMsg">
