@@ -67,6 +67,7 @@ const articles = [
   },
   { title: "How to Budget Your Money: The Simple 50/30/20 Rule", category: "Financial Literacy", url: "/how-to-budget-money.html", excerpt: "The only budgeting system you'll ever need.", date: "June 16, 2026", readTime: "7 min", icon: "💵" },
   { title: "How to Optimize Your LinkedIn Profile to Get Noticed in 2026", category: "Career Growth", url: "/linkedin-profile-tips.html", excerpt: "What recruiters actually look at.", date: "June 16, 2026", readTime: "8 min", icon: "💼" },
+  { title: "Lao Tzu's 10 Life Lessons That Will Change How You Think", category: "Philosophy", url: "/lao-tzu-life-lessons.html", excerpt: "Ancient wisdom from the father of Taoism — translated into timeless principles for the modern mind.", date: "June 17, 2026", readTime: "10 min", icon: "🎋" },
 ];
 
 // Auto-count categories
