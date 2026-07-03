@@ -70,6 +70,7 @@ const articles = [
   { title: "Lao Tzu's 10 Life Lessons That Will Change How You Think", category: "Philosophy", url: "/lao-tzu-life-lessons.html", excerpt: "Ancient wisdom from the father of Taoism — translated into timeless principles for the modern mind.", date: "June 17, 2026", readTime: "10 min", icon: "🎋" },
     { title: "Passive Income for Beginners: 7 Real Ways to Earn While You Sleep", category: "Financial Literacy", url: "/passive-income-for-beginners.html", excerpt: "7 proven passive income streams — with honest numbers and a clear starting point for each.", date: "June 20, 2026", readTime: "10 min", icon: "💰" },
     { title: "Index Funds for Dummies: Everything You Need to Know", category: "Financial Literacy", url: "/index-funds-for-dummies.html", excerpt: "No jargon, no finance degree needed. Everything a complete beginner needs to know to start investing today.", date: "June 27, 2026", readTime: "8 min", icon: "💰" },
+    { title: "Best Index Funds for Beginners in 2026 (Ranked & Explained)", category: "Financial Literacy", url: "/best-index-funds-for-beginners.html", excerpt: "5 funds. Real numbers. Zero fluff. Here's exactly where to start — and why.", date: "July 3, 2026", readTime: "8 min", icon: "💰" },
 ];
 
 // Auto-count categories
