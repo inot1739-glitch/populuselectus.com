@@ -71,6 +71,15 @@ const articles = [
     { title: "Passive Income for Beginners: 7 Real Ways to Earn While You Sleep", category: "Financial Literacy", url: "/passive-income-for-beginners.html", excerpt: "7 proven passive income streams — with honest numbers and a clear starting point for each.", date: "June 20, 2026", readTime: "10 min", icon: "💰" },
     { title: "Index Funds for Dummies: Everything You Need to Know", category: "Financial Literacy", url: "/index-funds-for-dummies.html", excerpt: "No jargon, no finance degree needed. Everything a complete beginner needs to know to start investing today.", date: "June 27, 2026", readTime: "8 min", icon: "💰" },
     { title: "Best Index Funds for Beginners in 2026 (Ranked & Explained)", category: "Financial Literacy", url: "/best-index-funds-for-beginners.html", excerpt: "5 funds. Real numbers. Zero fluff. Here's exactly where to start — and why.", date: "July 3, 2026", readTime: "8 min", icon: "💰" },
+    { title: "How to Save Money Fast: 10 Strategies That Actually Work", category: "Financial Literacy", url: "/how-to-save-money-fast.html", excerpt: "No extreme budgets. No lifestyle sacrifice. Just 10 proven moves you can start this week.", date: "July 5, 2026", readTime: "8 min", icon: "💰" },
+
+{ title: "How to Develop a Growth Mindset: 7 Daily Habits", category: "Mindset", url: "/how-to-develop-a-growth-mindset.html", excerpt: "Reading about growth mindset won't change you. These 7 daily habits will.", date: "July 5, 2026", readTime: "7 min", icon: "🧠" },
+
+{ title: "How to Stop Wasting Time: 10 Habits That Kill Your Productivity", category: "Productivity", url: "/how-to-stop-wasting-time.html", excerpt: "You're not lazy — you're using your time wrong. Here's how to fix it.", date: "July 5, 2026", readTime: "8 min", icon: "⚡" },
+
+{ title: "How to Write a Resume That Gets You Hired in 2026", category: "Career Growth", url: "/how-to-write-a-resume.html", excerpt: "Most resumes get rejected in 7 seconds. Here's how to be in the 2% that don't.", date: "July 5, 2026", readTime: "9 min", icon: "💼" },
+
+{ title: "The Stoic Guide to Stress: How Marcus Aurelius Would Handle Modern Anxiety", category: "Philosophy", url: "/stoic-guide-to-stress.html", excerpt: "He ruled an empire and survived plague. His stress system still works 2,000 years later.", date: "July 5, 2026", readTime: "8 min", icon: "🏛️" },
 ];
 
 // Auto-count categories
