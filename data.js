@@ -80,6 +80,15 @@ const articles = [
 { title: "How to Write a Resume That Gets You Hired in 2026", category: "Career Growth", url: "/how-to-write-a-resume.html", excerpt: "Most resumes get rejected in 7 seconds. Here's how to be in the 2% that don't.", date: "July 5, 2026", readTime: "9 min", icon: "💼" },
 
 { title: "The Stoic Guide to Stress: How Marcus Aurelius Would Handle Modern Anxiety", category: "Philosophy", url: "/stoic-guide-to-stress.html", excerpt: "He ruled an empire and survived plague. His stress system still works 2,000 years later.", date: "July 5, 2026", readTime: "8 min", icon: "🏛️" },
+    { title: "How to Start Investing With $100: A Step-by-Step Guide", category: "Financial Literacy", url: "/how-to-start-investing-with-100.html", excerpt: "You don't need thousands to start investing. Here's exactly what to do with your first $100.", date: "July 12, 2026", readTime: "7 min", icon: "💰" },
+
+{ title: "How to Stop Negative Thinking: 7 Proven Techniques", category: "Mindset", url: "/how-to-stop-negative-thinking.html", excerpt: "Negative thinking isn't a character flaw — it's a habit. Here are 7 science-backed techniques to break the cycle.", date: "July 12, 2026", readTime: "8 min", icon: "🧠" },
+
+{ title: "How to Create a Daily Routine That Actually Sticks", category: "Productivity", url: "/how-to-create-a-daily-routine.html", excerpt: "Stop copying someone else's 5am routine. Here's how to build one that works for your life.", date: "July 12, 2026", readTime: "8 min", icon: "⚡" },
+
+{ title: "How to Ace a Job Interview: 10 Tips That Work in 2026", category: "Career Growth", url: "/how-to-ace-a-job-interview.html", excerpt: "Most candidates prepare the wrong things. Here's what actually gets you the offer.", date: "July 12, 2026", readTime: "9 min", icon: "💼" },
+
+{ title: "5 Life Lessons from Epictetus That Will Change How You Think", category: "Philosophy", url: "/epictetus-life-lessons.html", excerpt: "He was born in chains and died free. His philosophy is the most practical guide to resilience ever written.", date: "July 12, 2026", readTime: "8 min", icon: "🏛️" },
 ];
 
 // Auto-count categories
