@@ -89,6 +89,16 @@ const articles = [
 { title: "How to Ace a Job Interview: 10 Tips That Work in 2026", category: "Career Growth", url: "/how-to-ace-a-job-interview.html", excerpt: "Most candidates prepare the wrong things. Here's what actually gets you the offer.", date: "July 12, 2026", readTime: "9 min", icon: "💼" },
 
 { title: "5 Life Lessons from Epictetus That Will Change How You Think", category: "Philosophy", url: "/epictetus-life-lessons.html", excerpt: "He was born in chains and died free. His philosophy is the most practical guide to resilience ever written.", date: "July 12, 2026", readTime: "8 min", icon: "🏛️" },
+  { title: "What Is Compound Interest and Why It Makes You Rich", category: "Financial Literacy", url: "/what-is-compound-interest.html", excerpt: "Einstein called it the eighth wonder of the world. Here's how to make it work for you.", date: "August 6, 2026", readTime: "7 min", icon: "💰" },
+
+{ title: "How to Build Self-Discipline: 8 Habits of Highly Disciplined People", category: "Mindset", url: "/how-to-build-self-discipline.html", excerpt: "Disciplined people don't have more willpower. They have better systems.", date: "August 6, 2026", readTime: "8 min", icon: "🧠" },
+
+{ title: "The Pomodoro Technique: Does It Actually Work? (Honest Review)", category: "Productivity", url: "/pomodoro-technique.html", excerpt: "Used by millions. Debated by experts. Here's an honest answer — with the science behind it.", date: "August 6, 2026", readTime: "7 min", icon: "⚡" },
+
+{ title: "How to Negotiate Your Salary: Scripts That Actually Work", category: "Career Growth", url: "/how-to-negotiate-salary.html", excerpt: "Most people never negotiate — and it costs them thousands every year. Here are scripts that get you more money.", date: "August 6, 2026", readTime: "9 min", icon: "💼" },
+
+{ title: "What Would Seneca Say About Your Relationship With Time?", category: "Philosophy", url: "/seneca-on-time.html", excerpt: "He wrote the most powerful essay on time 2,000 years ago. It's more accurate today than ever.", date: "August 6, 2026", readTime: "8 min", icon: "🏛️" },
+  
 ];
 
 // Auto-count categories
