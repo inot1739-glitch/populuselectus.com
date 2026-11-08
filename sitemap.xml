@@ -1,76 +1,193 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
+  <url>
+    <loc>https://populuselectus.com/about</loc>
+    <lastmod>2026-11-08</lastmod>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://populuselectus.com/best-index-funds-for-beginners</loc>
+    <lastmod>2026-11-08</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://populuselectus.com/best-productivity-tips</loc>
+    <lastmod>2026-11-08</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://populuselectus.com/career</loc>
+    <lastmod>2026-11-08</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://populuselectus.com/contact</loc>
+    <lastmod>2026-11-08</lastmod>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://populuselectus.com/epictetus-life-lessons</loc>
+    <lastmod>2026-11-08</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://populuselectus.com/finance</loc>
+    <lastmod>2026-11-08</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://populuselectus.com/growth-mindset-vs-fixed-mindset</loc>
+    <lastmod>2026-11-08</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://populuselectus.com/how-to-ace-a-job-interview</loc>
+    <lastmod>2026-11-08</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://populuselectus.com/how-to-ask-for-a-raise</loc>
+    <lastmod>2026-11-08</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://populuselectus.com/how-to-budget-money</loc>
+    <lastmod>2026-11-08</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://populuselectus.com/how-to-build-good-habits</loc>
+    <lastmod>2026-11-08</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://populuselectus.com/how-to-build-self-discipline</loc>
+    <lastmod>2026-11-08</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://populuselectus.com/how-to-create-a-daily-routine</loc>
+    <lastmod>2026-11-08</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://populuselectus.com/how-to-develop-a-growth-mindset</loc>
+    <lastmod>2026-11-08</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://populuselectus.com/how-to-negotiate-salary</loc>
+    <lastmod>2026-11-08</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://populuselectus.com/how-to-save-money-fast</loc>
+    <lastmod>2026-11-08</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://populuselectus.com/how-to-start-investing-with-100</loc>
+    <lastmod>2026-11-08</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://populuselectus.com/how-to-stop-negative-thinking</loc>
+    <lastmod>2026-11-08</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://populuselectus.com/how-to-stop-procrastinating</loc>
+    <lastmod>2026-11-08</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://populuselectus.com/how-to-stop-wasting-time</loc>
+    <lastmod>2026-11-08</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://populuselectus.com/how-to-wake-up-early</loc>
+    <lastmod>2026-11-08</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://populuselectus.com/how-to-write-a-resume</loc>
+    <lastmod>2026-11-08</lastmod>
+    <priority>0.8</priority>
+  </url>
   <url>
     <loc>https://populuselectus.com/</loc>
-    <lastmod>2026-06-16</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-11-08</lastmod>
     <priority>1.0</priority>
   </url>
-
-  <!-- ARTICLES -->
   <url>
-    <loc>https://populuselectus.com/how-to-build-good-habits.html</loc>
-    <lastmod>2026-06-16</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://populuselectus.com/index-fund-investing-beginners</loc>
+    <lastmod>2026-11-08</lastmod>
     <priority>0.8</priority>
   </url>
-
   <url>
-    <loc>https://populuselectus.com/how-to-wake-up-early.html</loc>
-    <lastmod>2026-06-16</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://populuselectus.com/index-funds-for-dummies</loc>
+    <lastmod>2026-11-08</lastmod>
     <priority>0.8</priority>
   </url>
-
   <url>
-    <loc>https://populuselectus.com/growth-mindset-vs-fixed-mindset.html</loc>
-    <lastmod>2026-06-16</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://populuselectus.com/lao-tzu-life-lessons</loc>
+    <lastmod>2026-11-08</lastmod>
     <priority>0.8</priority>
   </url>
-
   <url>
-    <loc>https://populuselectus.com/how-to-stop-procrastinating.html</loc>
-    <lastmod>2026-06-16</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://populuselectus.com/linkedin-profile-tips</loc>
+    <lastmod>2026-11-08</lastmod>
     <priority>0.8</priority>
   </url>
-
   <url>
-    <loc>https://populuselectus.com/best-productivity-tips.html</loc>
-    <lastmod>2026-06-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- CATEGORIES -->
-  <url>
-    <loc>https://populuselectus.com/mindset.html</loc>
-    <lastmod>2026-06-16</lastmod>
-    <changefreq>weekly</changefreq>
+    <loc>https://populuselectus.com/mindset</loc>
+    <lastmod>2026-11-08</lastmod>
     <priority>0.7</priority>
   </url>
-
   <url>
-    <loc>https://populuselectus.com/productivity.html</loc>
-    <lastmod>2026-06-16</lastmod>
-    <changefreq>weekly</changefreq>
+    <loc>https://populuselectus.com/passive-income-for-beginners</loc>
+    <lastmod>2026-11-08</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://populuselectus.com/philosophy</loc>
+    <lastmod>2026-11-08</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://populuselectus.com/pomodoro-technique</loc>
+    <lastmod>2026-11-08</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://populuselectus.com/privacy</loc>
+    <lastmod>2026-11-08</lastmod>
+    <priority>0.1</priority>
+  </url>
+  <url>
+    <loc>https://populuselectus.com/productivity</loc>
+    <lastmod>2026-11-08</lastmod>
     <priority>0.7</priority>
   </url>
-
   <url>
-    <loc>https://populuselectus.com/career.html</loc>
-    <lastmod>2026-06-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <loc>https://populuselectus.com/seneca-on-time</loc>
+    <lastmod>2026-11-08</lastmod>
+    <priority>0.8</priority>
   </url>
-
   <url>
-    <loc>https://populuselectus.com/finance.html</loc>
-    <lastmod>2026-06-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <loc>https://populuselectus.com/stoic-guide-to-stress</loc>
+    <lastmod>2026-11-08</lastmod>
+    <priority>0.8</priority>
   </url>
-
+  <url>
+    <loc>https://populuselectus.com/what-is-compound-interest</loc>
+    <lastmod>2026-11-08</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://populuselectus.com/write-for-us</loc>
+    <lastmod>2026-11-08</lastmod>
+    <priority>0.3</priority>
+  </url>
 </urlset>

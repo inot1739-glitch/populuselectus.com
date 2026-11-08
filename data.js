@@ -5,7 +5,7 @@ const articles = [
     {
     title: "How to Build Good Habits That Actually Stick",
     category: "Mindset",
-    url: "/how-to-build-good-habits.html",
+    url: "/how-to-build-good-habits",
     excerpt: "Science-backed strategies to rewire your brain for lasting habits — no willpower required.",
     date: "June 14, 2026",
     readTime: "8 min",
@@ -14,7 +14,7 @@ const articles = [
   {
     title: "Growth Mindset vs Fixed Mindset: Which One Are You?",
     category: "Mindset",
-    url: "/growth-mindset-vs-fixed-mindset.html",
+    url: "/growth-mindset-vs-fixed-mindset",
     excerpt: "The single belief that separates people who improve from people who stay stuck.",
     date: "June 15, 2026",
     readTime: "7 min",
@@ -23,7 +23,7 @@ const articles = [
   {
     title: "How to Wake Up Early (And Actually Feel Good About It)",
     category: "Productivity",
-    url: "/how-to-wake-up-early.html",
+    url: "/how-to-wake-up-early",
     excerpt: "The science of sleep cycles and a system to become a natural early riser.",
     date: "June 14, 2026",
     readTime: "7 min",
@@ -32,7 +32,7 @@ const articles = [
   {
     title: "How to Stop Procrastinating Once and For All",
     category: "Productivity",
-    url: "/how-to-stop-procrastinating.html",
+    url: "/how-to-stop-procrastinating",
     excerpt: "Stop avoiding tasks and start taking action with these science-backed strategies.",
     date: "June 16, 2026",
     readTime: "8 min",
@@ -41,7 +41,7 @@ const articles = [
   {
     title: "Best Productivity Tips That Actually Work in 2026",
     category: "Productivity",
-    url: "/best-productivity-tips.html",
+    url: "/best-productivity-tips",
     excerpt: "No fluff, no gimmicks — just the strategies proven to make you do more of what matters.",
     date: "June 13, 2026",
     readTime: "9 min",
@@ -50,7 +50,7 @@ const articles = [
   {
     title: "How to Ask for a Raise and Actually Get It",
     category: "Career Growth",
-    url: "/how-to-ask-for-a-raise.html",
+    url: "/how-to-ask-for-a-raise",
     excerpt: "The exact scripts and strategies that turn a nerve-wracking conversation into a yes.",
     date: "June 16, 2026",
     readTime: "8 min",
@@ -59,45 +59,45 @@ const articles = [
   {
     title: "Index Fund Investing for Beginners",
     category: "Financial Literacy",
-    url: "/index-fund-investing-beginners.html",
+    url: "/index-fund-investing-beginners",
     excerpt: "The simplest way to build long-term wealth — with zero stock-picking required.",
     date: "June 16, 2026",
     readTime: "9 min",
     icon: "💰"
   },
-  { title: "How to Budget Your Money: The Simple 50/30/20 Rule", category: "Financial Literacy", url: "/how-to-budget-money.html", excerpt: "The only budgeting system you'll ever need.", date: "June 16, 2026", readTime: "7 min", icon: "💵" },
-  { title: "How to Optimize Your LinkedIn Profile to Get Noticed in 2026", category: "Career Growth", url: "/linkedin-profile-tips.html", excerpt: "What recruiters actually look at.", date: "June 16, 2026", readTime: "8 min", icon: "💼" },
-  { title: "Lao Tzu's 10 Life Lessons That Will Change How You Think", category: "Philosophy", url: "/lao-tzu-life-lessons.html", excerpt: "Ancient wisdom from the father of Taoism — translated into timeless principles for the modern mind.", date: "June 17, 2026", readTime: "10 min", icon: "🎋" },
-    { title: "Passive Income for Beginners: 7 Real Ways to Earn While You Sleep", category: "Financial Literacy", url: "/passive-income-for-beginners.html", excerpt: "7 proven passive income streams — with honest numbers and a clear starting point for each.", date: "June 20, 2026", readTime: "10 min", icon: "💰" },
-    { title: "Index Funds for Dummies: Everything You Need to Know", category: "Financial Literacy", url: "/index-funds-for-dummies.html", excerpt: "No jargon, no finance degree needed. Everything a complete beginner needs to know to start investing today.", date: "June 27, 2026", readTime: "8 min", icon: "💰" },
-    { title: "Best Index Funds for Beginners in 2026 (Ranked & Explained)", category: "Financial Literacy", url: "/best-index-funds-for-beginners.html", excerpt: "5 funds. Real numbers. Zero fluff. Here's exactly where to start — and why.", date: "July 3, 2026", readTime: "8 min", icon: "💰" },
-    { title: "How to Save Money Fast: 10 Strategies That Actually Work", category: "Financial Literacy", url: "/how-to-save-money-fast.html", excerpt: "No extreme budgets. No lifestyle sacrifice. Just 10 proven moves you can start this week.", date: "July 5, 2026", readTime: "8 min", icon: "💰" },
+  { title: "How to Budget Your Money: The Simple 50/30/20 Rule", category: "Financial Literacy", url: "/how-to-budget-money", excerpt: "The only budgeting system you'll ever need.", date: "June 16, 2026", readTime: "7 min", icon: "💵" },
+  { title: "How to Optimize Your LinkedIn Profile to Get Noticed in 2026", category: "Career Growth", url: "/linkedin-profile-tips", excerpt: "What recruiters actually look at.", date: "June 16, 2026", readTime: "8 min", icon: "💼" },
+  { title: "Lao Tzu's 10 Life Lessons That Will Change How You Think", category: "Philosophy", url: "/lao-tzu-life-lessons", excerpt: "Ancient wisdom from the father of Taoism — translated into timeless principles for the modern mind.", date: "June 17, 2026", readTime: "10 min", icon: "🎋" },
+    { title: "Passive Income for Beginners: 7 Real Ways to Earn While You Sleep", category: "Financial Literacy", url: "/passive-income-for-beginners", excerpt: "7 proven passive income streams — with honest numbers and a clear starting point for each.", date: "June 20, 2026", readTime: "10 min", icon: "💰" },
+    { title: "Index Funds for Dummies: Everything You Need to Know", category: "Financial Literacy", url: "/index-funds-for-dummies", excerpt: "No jargon, no finance degree needed. Everything a complete beginner needs to know to start investing today.", date: "June 27, 2026", readTime: "8 min", icon: "💰" },
+    { title: "Best Index Funds for Beginners in 2026 (Ranked & Explained)", category: "Financial Literacy", url: "/best-index-funds-for-beginners", excerpt: "5 funds. Real numbers. Zero fluff. Here's exactly where to start — and why.", date: "July 3, 2026", readTime: "8 min", icon: "💰" },
+    { title: "How to Save Money Fast: 10 Strategies That Actually Work", category: "Financial Literacy", url: "/how-to-save-money-fast", excerpt: "No extreme budgets. No lifestyle sacrifice. Just 10 proven moves you can start this week.", date: "July 5, 2026", readTime: "8 min", icon: "💰" },
 
-{ title: "How to Develop a Growth Mindset: 7 Daily Habits", category: "Mindset", url: "/how-to-develop-a-growth-mindset.html", excerpt: "Reading about growth mindset won't change you. These 7 daily habits will.", date: "July 5, 2026", readTime: "7 min", icon: "🧠" },
+{ title: "How to Develop a Growth Mindset: 7 Daily Habits", category: "Mindset", url: "/how-to-develop-a-growth-mindset", excerpt: "Reading about growth mindset won't change you. These 7 daily habits will.", date: "July 5, 2026", readTime: "7 min", icon: "🧠" },
 
-{ title: "How to Stop Wasting Time: 10 Habits That Kill Your Productivity", category: "Productivity", url: "/how-to-stop-wasting-time.html", excerpt: "You're not lazy — you're using your time wrong. Here's how to fix it.", date: "July 5, 2026", readTime: "8 min", icon: "⚡" },
+{ title: "How to Stop Wasting Time: 10 Habits That Kill Your Productivity", category: "Productivity", url: "/how-to-stop-wasting-time", excerpt: "You're not lazy — you're using your time wrong. Here's how to fix it.", date: "July 5, 2026", readTime: "8 min", icon: "⚡" },
 
-{ title: "How to Write a Resume That Gets You Hired in 2026", category: "Career Growth", url: "/how-to-write-a-resume.html", excerpt: "Most resumes get rejected in 7 seconds. Here's how to be in the 2% that don't.", date: "July 5, 2026", readTime: "9 min", icon: "💼" },
+{ title: "How to Write a Resume That Gets You Hired in 2026", category: "Career Growth", url: "/how-to-write-a-resume", excerpt: "Most resumes get rejected in 7 seconds. Here's how to be in the 2% that don't.", date: "July 5, 2026", readTime: "9 min", icon: "💼" },
 
-{ title: "The Stoic Guide to Stress: How Marcus Aurelius Would Handle Modern Anxiety", category: "Philosophy", url: "/stoic-guide-to-stress.html", excerpt: "He ruled an empire and survived plague. His stress system still works 2,000 years later.", date: "July 5, 2026", readTime: "8 min", icon: "🏛️" },
-    { title: "How to Start Investing With $100: A Step-by-Step Guide", category: "Financial Literacy", url: "/how-to-start-investing-with-100.html", excerpt: "You don't need thousands to start investing. Here's exactly what to do with your first $100.", date: "July 12, 2026", readTime: "7 min", icon: "💰" },
+{ title: "The Stoic Guide to Stress: How Marcus Aurelius Would Handle Modern Anxiety", category: "Philosophy", url: "/stoic-guide-to-stress", excerpt: "He ruled an empire and survived plague. His stress system still works 2,000 years later.", date: "July 5, 2026", readTime: "8 min", icon: "🏛️" },
+    { title: "How to Start Investing With $100: A Step-by-Step Guide", category: "Financial Literacy", url: "/how-to-start-investing-with-100", excerpt: "You don't need thousands to start investing. Here's exactly what to do with your first $100.", date: "July 12, 2026", readTime: "7 min", icon: "💰" },
 
-{ title: "How to Stop Negative Thinking: 7 Proven Techniques", category: "Mindset", url: "/how-to-stop-negative-thinking.html", excerpt: "Negative thinking isn't a character flaw — it's a habit. Here are 7 science-backed techniques to break the cycle.", date: "July 12, 2026", readTime: "8 min", icon: "🧠" },
+{ title: "How to Stop Negative Thinking: 7 Proven Techniques", category: "Mindset", url: "/how-to-stop-negative-thinking", excerpt: "Negative thinking isn't a character flaw — it's a habit. Here are 7 science-backed techniques to break the cycle.", date: "July 12, 2026", readTime: "8 min", icon: "🧠" },
 
-{ title: "How to Create a Daily Routine That Actually Sticks", category: "Productivity", url: "/how-to-create-a-daily-routine.html", excerpt: "Stop copying someone else's 5am routine. Here's how to build one that works for your life.", date: "July 12, 2026", readTime: "8 min", icon: "⚡" },
+{ title: "How to Create a Daily Routine That Actually Sticks", category: "Productivity", url: "/how-to-create-a-daily-routine", excerpt: "Stop copying someone else's 5am routine. Here's how to build one that works for your life.", date: "July 12, 2026", readTime: "8 min", icon: "⚡" },
 
-{ title: "How to Ace a Job Interview: 10 Tips That Work in 2026", category: "Career Growth", url: "/how-to-ace-a-job-interview.html", excerpt: "Most candidates prepare the wrong things. Here's what actually gets you the offer.", date: "July 12, 2026", readTime: "9 min", icon: "💼" },
+{ title: "How to Ace a Job Interview: 10 Tips That Work in 2026", category: "Career Growth", url: "/how-to-ace-a-job-interview", excerpt: "Most candidates prepare the wrong things. Here's what actually gets you the offer.", date: "July 12, 2026", readTime: "9 min", icon: "💼" },
 
-{ title: "5 Life Lessons from Epictetus That Will Change How You Think", category: "Philosophy", url: "/epictetus-life-lessons.html", excerpt: "He was born in chains and died free. His philosophy is the most practical guide to resilience ever written.", date: "July 12, 2026", readTime: "8 min", icon: "🏛️" },
-  { title: "What Is Compound Interest and Why It Makes You Rich", category: "Financial Literacy", url: "/what-is-compound-interest.html", excerpt: "Einstein called it the eighth wonder of the world. Here's how to make it work for you.", date: "August 6, 2026", readTime: "7 min", icon: "💰" },
+{ title: "5 Life Lessons from Epictetus That Will Change How You Think", category: "Philosophy", url: "/epictetus-life-lessons", excerpt: "He was born in chains and died free. His philosophy is the most practical guide to resilience ever written.", date: "July 12, 2026", readTime: "8 min", icon: "🏛️" },
+  { title: "What Is Compound Interest and Why It Makes You Rich", category: "Financial Literacy", url: "/what-is-compound-interest", excerpt: "Einstein called it the eighth wonder of the world. Here's how to make it work for you.", date: "August 6, 2026", readTime: "7 min", icon: "💰" },
 
-{ title: "How to Build Self-Discipline: 8 Habits of Highly Disciplined People", category: "Mindset", url: "/how-to-build-self-discipline.html", excerpt: "Disciplined people don't have more willpower. They have better systems.", date: "August 6, 2026", readTime: "8 min", icon: "🧠" },
+{ title: "How to Build Self-Discipline: 8 Habits of Highly Disciplined People", category: "Mindset", url: "/how-to-build-self-discipline", excerpt: "Disciplined people don't have more willpower. They have better systems.", date: "August 6, 2026", readTime: "8 min", icon: "🧠" },
 
-{ title: "The Pomodoro Technique: Does It Actually Work? (Honest Review)", category: "Productivity", url: "/pomodoro-technique.html", excerpt: "Used by millions. Debated by experts. Here's an honest answer — with the science behind it.", date: "August 6, 2026", readTime: "7 min", icon: "⚡" },
+{ title: "The Pomodoro Technique: Does It Actually Work? (Honest Review)", category: "Productivity", url: "/pomodoro-technique", excerpt: "Used by millions. Debated by experts. Here's an honest answer — with the science behind it.", date: "August 6, 2026", readTime: "7 min", icon: "⚡" },
 
-{ title: "How to Negotiate Your Salary: Scripts That Actually Work", category: "Career Growth", url: "/how-to-negotiate-salary.html", excerpt: "Most people never negotiate — and it costs them thousands every year. Here are scripts that get you more money.", date: "August 6, 2026", readTime: "9 min", icon: "💼" },
+{ title: "How to Negotiate Your Salary: Scripts That Actually Work", category: "Career Growth", url: "/how-to-negotiate-salary", excerpt: "Most people never negotiate — and it costs them thousands every year. Here are scripts that get you more money.", date: "August 6, 2026", readTime: "9 min", icon: "💼" },
 
-{ title: "What Would Seneca Say About Your Relationship With Time?", category: "Philosophy", url: "/seneca-on-time.html", excerpt: "He wrote the most powerful essay on time 2,000 years ago. It's more accurate today than ever.", date: "August 6, 2026", readTime: "8 min", icon: "🏛️" },
+{ title: "What Would Seneca Say About Your Relationship With Time?", category: "Philosophy", url: "/seneca-on-time", excerpt: "He wrote the most powerful essay on time 2,000 years ago. It's more accurate today than ever.", date: "August 6, 2026", readTime: "8 min", icon: "🏛️" },
   
 ];
 
